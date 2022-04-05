@@ -1,5 +1,9 @@
 package A2;
 
+/**
+ * Don't forget to comment!
+ */
+
 public class Job {
     int priority;       // priority for PQ 
     int length;         //time measurment for a process (1-100)
