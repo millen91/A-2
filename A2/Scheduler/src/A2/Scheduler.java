@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 
 /**
- * @class that creates a scheduler
+ * creates 
  */
 public class Scheduler  {
     HeapPriorityQueue<Integer, String> jobQueue = 
