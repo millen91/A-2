@@ -32,4 +32,10 @@ public class MyMethods {
         return length;
     }
 
+    public static int maxWaitingTime(String [] schedule)
+    {
+        int lastIndex = schedule.length - 1;
+        return Integer.parseInt(schedule[lastIndex]);
+    }
+
 }
