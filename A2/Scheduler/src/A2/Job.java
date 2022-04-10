@@ -1,15 +1,17 @@
 package A2;
 
 /**
- * Don't forget to comment!
+ * Used to create a job object that has four variables 
+ * conteains a constructor, a getter for priority, and a toString() method
+ * Jobs are used in the scheduler class 
  */
 
 public class Job {
     int priority;       // priority for PQ 
-    int length;         //time measurment for a process (1-100)
-    int timeWaiting;    //time it takes a job to run
+    int length;         //time measurment for a process (1-100 slices)
+    int timeWaiting;    //time it takes a job to run (in slices)
     String name;        //name of the job
-    boolean isJob;
+    //boolean isJob;
 
    /** 
     *Constructor for job class
@@ -35,17 +37,13 @@ public class Job {
         return priority;
     }
 
+    /**
+     * Used to print out the name of the job, aswell as the priority and time remaining
+     */
     @Override
     public String toString()
     {
-        if (isJob)
-        {
             return String.format("%s (priority: %d, time remaining: %d)", name, priority, timeWaiting);
-        }
-        else 
-        {
-            return "no new job this slice";
-        }
         
     }
 }
