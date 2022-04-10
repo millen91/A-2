@@ -1,4 +1,4 @@
-package a2;
+
 
 /**
  * Class used to process a one line string instruction from a text file

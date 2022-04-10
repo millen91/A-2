@@ -1,4 +1,4 @@
-package a2;
+
 
 /**
  * Used to create a job object that has four variables 
