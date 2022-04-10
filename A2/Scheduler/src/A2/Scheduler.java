@@ -31,7 +31,7 @@ public class Scheduler {
      * @param HeapPriorityQueue
      */
     public static void processSchedule(Scheduler schedule, 
-        HeapPriorityQueue<Integer,Integer> jobQueue) {
+        HeapPriorityQueue<Integer,Job> jobQueue) {
          
         Scanner scan = null;
         String instruction;
@@ -48,7 +48,11 @@ public class Scheduler {
 
             // for (:)  // compare waiting times with the maxWaitingTime, increase priority for all keys if wT > mWT
                 // {
-
+                //  timeWaiting++;
+                // if(timeWaiting > maxTimeWaiting) {
+                //  increasePriority(int key);
+                //  timeWaiting = 0;
+               // }
                 // }
 
                 if (line[0].equals("add"))  //create a new job when index0 is string "add"
