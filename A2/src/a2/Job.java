@@ -1,4 +1,4 @@
-package A2;
+package a2;
 
 /**
  * Used to create a job object that has four variables 
@@ -11,7 +11,6 @@ public class Job {
     int length;         //time measurment for a process (1-100 slices)
     int timeWaiting;    //time it takes a job to run (in slices)
     String name;        //name of the job
-    //boolean isJob;
 
    /** 
     *Constructor for job class
