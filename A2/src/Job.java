@@ -42,7 +42,7 @@ public class Job {
     @Override
     public String toString()
     {
-            return String.format("%s (priority: %d, time remaining: %d)", name, priority, timeWaiting);
+            return String.format("%s (priority: %d, time remaining: %d)", name, priority, length);
         
     }
 }

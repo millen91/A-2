@@ -32,18 +32,19 @@ public class ProcessInstruction {
         int length = scheduler.length;              //length of the given array
         if (scheduler[length - 6].equals("with"))  // "with" was found
         {
-            for (int i = length - 6; i > 0; i--) {
+            for (int i = length - 7; i >= 0; i--) {
                 
-                if (scheduler[i -1].equals("add")) 
+                if (scheduler[i -1].equals("job")) 
                 {
-                    if (scheduler [i - 2] == null)
+                    if (scheduler [i - 2].equals("add"))
                     {
-                        return null;
+                        finalString = scheduler[i] + " " + finalString;
+                        return finalString;
                     }
                 }
                 else
                 {
-                    finalString = scheduler[i - 1] + " " + finalString;
+                    finalString = scheduler[i] + " " + finalString;
                 }
             }
             return finalString;
